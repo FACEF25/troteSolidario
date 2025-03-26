@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(90deg, #3498DB, #2C3E50);
+    color: white;
+    padding: 20px 0;
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    background-color: #3498DB;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#links-menu {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    background: #2980B9;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+nav a:hover {
+    background: #1C5980;
+}
+
+img {
+    width: 80px;
+    height: auto;
+    border-radius: 8%;
+    margin-right: 20px;
+}
+
+.container {
+    width: 80%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+    padding: 20px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #2C3E50;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.table th, .table td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.table thead tr {
+    background-color: #3498DB;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.table tbody tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.laranja {
+    background-color: #FFA500;
+    color: black;
+}
+
+.azul {
+    background-color: #3498DB;
+    color: white;
+}
+
+.preta {
+    background-color: #2C3E50;
+    color: white;
+}
+
+.roxa {
+    background-color: #9B59B6;
+    color: white;
+}
+
+.verde {
+    background-color: #2ECC71;
+    color: white;
+}
+
+.vermelha {
+    background-color: #E74C3C;
+    color: white;
+}
+
+.infobox {
+    border: 2px solid #3498DB;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.legenda {
+    font-size: 0.9em;
+    color: #555;
+}
