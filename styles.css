@@ -152,3 +152,76 @@ h2 {
     font-size: 0.9em;
     color: #555;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.campos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.campos label {
+    font-weight: bold;
+    color: #2C3E50;
+    font-size: 16px;
+}
+
+.campos input[type="number"],
+.campos select {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    transition: border-color 0.3s ease;
+}
+
+.campos input[type="number"]:focus,
+.campos select:focus {
+    border-color: #3498DB;
+    outline: none;
+}
+
+.campos button {
+    padding: 10px 20px;
+    background-color: #3498DB;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+.campos button:hover {
+    background-color: #1C5980;
+}
+
+#soma {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2C3E50;
+    margin-top: 15px;
+}
+.linha {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.linha .campos {
+    flex: 1;
+    min-width: 200px;
+}

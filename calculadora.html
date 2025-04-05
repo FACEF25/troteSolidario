@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Trote Solidário Uni-FACEF</title>
         <link rel="stylesheet" href="styles.css"/>  
+        <script src="scripts.js"></script>
     </head>
 <body>
     <header>
@@ -25,8 +26,56 @@
     </nav>
     <!--class podemos reutilizar o estilo,id nao-->
     <div class="container">
-        <h2>Calculadora</h2>
-        <p>CENTRO UNIVERSITÁRIO MUNICIPAL DE FRANCA</p>
+        <h2>Calculadoras</h2>
+        <form>
+            <!-- Linha 1 -->
+            <div class="linha">
+                <div class="campos">
+                    <label> Selecione a cor da equipe </label>
+                    <select id="equipe">
+                        <option value="Laranja"> Laranja </option>
+                        <option value="Preta"> Preta </option>
+                        <option value="Roxa"> Roxa </option>
+                        <option value="Verde"> Verde </option>
+                        <option value="Vermelha"> Vermelha </option>
+                    </select>
+                </div>
+                <div class="campos">
+                    <label> Mascote do time </label>
+                    <input type="number" id="mascote" min="0"/>
+                </div>
+            </div>
+        
+            <!-- Linha 2 -->
+            <div class="linha">
+                <div class="campos">
+                    <label> Homenagem a um atleta </label>
+                    <input type="number" id="homenagem" min="0"/>
+                </div>
+                <div class="campos">
+                    <label> Quantidade de Litros de leite </label>
+                    <input type="number" id="leite" min="0"/>
+                </div>
+            </div>
+        
+            <!-- Linha 3 -->
+            <div class="linha">
+                <div class="campos">
+                    <label> Kit alimentação </label>
+                    <input type="number" id="kit" min="0"/> 
+                </div>
+                <div class="campos">
+                    <label> Suplemento </label>
+                    <input type="number" id="suplemento" min="0"/> 
+                </div>
+            </div>
+        
+            <!-- Botão e Resultado -->
+            <div class="campos">
+                <button type="button" onclick="calcular()"> Calcular </button>
+                <label id="soma"> </label>
+            </div>
+        </form>      
     </div>
 </body>
 </html>
