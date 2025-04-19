@@ -214,14 +214,27 @@ form {
     color: #2C3E50;
     margin-top: 15px;
 }
-.linha {
+
+.linha { 
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
+/* Cada campo ocupa 1/3 da linha, com espaçamento responsivo */
 .linha .campos {
-    flex: 1;
-    min-width: 200px;
+    flex: 1 1 calc(33.333% - 20px);
+    min-width: 220px;
+}
+
+/* Ajustando o botão fora da linha */
+form > .campos {
+    align-items: center;
+    margin-top: 30px;
+}
+
+.obrigatório{
+    color: #E74C3C;
 }

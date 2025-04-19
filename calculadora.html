@@ -27,55 +27,114 @@
     <!--class podemos reutilizar o estilo,id nao-->
     <div class="container">
         <h2>Calculadoras</h2>
+        <p >Digite os pontos feitos</p>
+        <p class="obrigatório">**Campos Obrigatórios</p>
         <form>
             <!-- Linha 1 -->
             <div class="linha">
                 <div class="campos">
-                    <label> Selecione a cor da equipe </label>
+                    <label>Selecione a cor da equipe</label>
                     <select id="equipe">
-                        <option value="Laranja"> Laranja </option>
-                        <option value="Preta"> Preta </option>
-                        <option value="Roxa"> Roxa </option>
-                        <option value="Verde"> Verde </option>
-                        <option value="Vermelha"> Vermelha </option>
+                        <option value="Laranja">Laranja</option>
+                        <option value="Preta">Preta</option>
+                        <option value="Roxa">Roxa</option>
+                        <option value="Verde">Verde</option>
+                        <option value="Vermelha">Vermelha</option>
                     </select>
                 </div>
                 <div class="campos">
-                    <label> Mascote do time </label>
+                    <label>Mascote do time</label>
                     <input type="number" id="mascote" min="0"/>
+                </div>
+                <div class="campos">
+                    <label>Homenagem a um atleta</label>
+                    <input type="number" id="homenagem" min="0"/>
                 </div>
             </div>
         
             <!-- Linha 2 -->
             <div class="linha">
                 <div class="campos">
-                    <label> Homenagem a um atleta </label>
-                    <input type="number" id="homenagem" min="0"/>
+                    <label>Caracterização e animação</label>
+                    <input type="number" id="animacao" min="0"  />
                 </div>
                 <div class="campos">
-                    <label> Quantidade de Litros de leite </label>
-                    <input type="number" id="leite" min="0"/>
+                    <label>Audiovisual</label>
+                    <input type="number" id="audiovisual" min="0"  />
+                </div>
+                <div class="campos">
+                    <label>Ação Social</label>
+                    <input type="number" id="acao" min="0"  />
                 </div>
             </div>
         
             <!-- Linha 3 -->
             <div class="linha">
                 <div class="campos">
-                    <label> Kit alimentação </label>
+                    <label>Kit alimentação</label>
                     <input type="number" id="kit" min="0"/> 
                 </div>
                 <div class="campos">
-                    <label> Suplemento </label>
+                    <label>Suplemento</label>
                     <input type="number" id="suplemento" min="0"/> 
+                </div>
+                <div class="campos">
+                    <label>Sangue</label>
+                    <input type="number" id="sangue" min="0"/> 
                 </div>
             </div>
         
-            <!-- Botão e Resultado -->
+            <!-- Linha 4 -->
+            <div class="linha">
+                <div class="campos">
+                    <label>Quantidade de Litros de leite</label>
+                    <input type="number" id="leite" min="0"/>
+                </div>
+            </div>
+            <h3>Alimentos Adicionais / Avulsos</h3>
+            <p>Escreva as quantidades do produto</p>
+            <p class="obrigatório">**Campos não obrigatórios</p>
+            <!-- Linha 5 -->
+            <div class="linha">
+                <div class="campos">
+                    <label>Arroz 5kg</label>
+                    <input type="number" id="arroz5" min="0"/>
+                </div>
+                <div class="campos">
+                    <label>Arroz 1kg</label>
+                    <input type="number" id="arroz1" min="0"/>
+                </div>
+                <div class="campos">
+                    <label>Feijão 2kg</label>
+                    <input type="number" id="feijao2" min="0"/>
+                </div>
+            </div>
+             <!-- Linha 6 -->
+             <div class="linha">
+                <div class="campos">
+                    <label>Feijão 1kg</label>
+                    <input type="number" id="feijao1" min="0"/>
+                </div>
+                <div class="campos">
+                    <label>Macarrão</label>
+                    <input type="number" id="macarrao" min="0"/>
+                </div>
+                <div class="campos">
+                    <label>Óleo</label>
+                    <input type="number" id="oleo" min="0"/>
+                </div>
+            </div>
             <div class="campos">
-                <button type="button" onclick="calcular()"> Calcular </button>
+                <label>&nbsp;</label> <!-- Espaço vazio para alinhar -->
+                <button type="button" onclick="calcular()">Calcular</button>
+            </div>
+            <div class="campos">
+                <label>&nbsp;</label>
                 <label id="soma"> </label>
             </div>
-        </form>      
+        </form>   
     </div>
+    <script src="scripts.js"></script>
+
 </body>
 </html>
